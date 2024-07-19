@@ -1,0 +1,106 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  color: #000000;
+}
+
+.navbar h1 {
+  font-size: 1.5em;
+}
+
+.info-icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.info-icon {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.tooltip-message {
+  visibility: hidden;
+  width: 200px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s, left 0.3s, right 0.3s;
+}
+
+.tooltip-message::after {
+  content: "";
+  position: absolute;
+  top: 50%; 
+  left: 0;
+  margin-top: -5px;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #555 transparent transparent;
+}
+
+.info-icon-container:hover .tooltip-message {
+  visibility: visible;
+  opacity: 1;
+}
+
+.M-G {
+  display: flex;
+  
+}
+.checklist{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.item{
+  display: flex;
+  align-items: center; 
+  margin: 15px 0px ;
+}
+
+.item input {
+  margin-right: 5px;
+}
+
+.userAdd{
+  display: flex;
+  flex-direction: column;
+  width: 50 px;
+  margin-left: 100px;
+  
+}
+
+.muscleGroups{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.muscleGroups label {
+  margin: 5px;
+}
+
+.message {
+  position: absolute;
+  top: 0px;
+  right: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000; 
+ 
+  padding: 10px 10px;
+  /*border-radius: 8px;*/
+}
